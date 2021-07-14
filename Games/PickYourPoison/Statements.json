@@ -1,0 +1,171 @@
+{
+    "statement_01": {
+        "choice_01": "...prefer to be your favourite movie character?",
+        "choice_02": "...prefer to be your favourite game character?"
+    },
+    "statement_02": {
+        "choice_01": "...rather drink a litre of pickle water?",
+        "choice_02": "...rather drink a litre of sausage water?"
+    },
+    "statement_03": {
+        "choice_01": "...prefer to be a vampire?",
+        "choice_02": "...prefer to be a werewolf?"
+    },
+    "statement_04": {
+        "choice_01": "...prefer to spend one week tied to your mother?",
+        "choice_02": "...prefer to spend one day tied to your latest math teacher?"
+    },
+    "statement_05": {
+        "choice_01": "...rather be locked up with someone who’s been pulling up their saliva for a while?",
+        "choice_02": "...rather be locked up with someone who’s constantly making clicking sounds?"
+    },
+    "statement_06": {
+        "choice_01": "...rather be constantly bleeding from the nose?",
+        "choice_02": "...rather be constantly bleeding from the nipple?"
+    },
+    "statement_07": {
+        "choice_01": "...prefer to get 3 teeth pulled out?",
+        "choice_02": "...prefer to loose the pinky toe?"
+    },
+     "statement_08": {
+          "choice_01": "...rather lick peanut butter off the road?",
+          "choice_02": "...rather climb to a tiger in a tiger cage?"
+    },
+    "statement_09": {
+        "choice_01": "...prefer tattooing an intimate area on your face?",
+        "choice_02": "...prefer tattooing a face on your intimate area?"
+    },
+    "statement_10": {
+        "choice_01": "...rather not be able to blink for 3 min?",
+        "choice_02": "...rather have to sneeze 10 times in a row?"
+    },
+    "statement_11": {
+        "choice_01": "...rather have the ability to cure other people’s diseases?",
+        "choice_02": "...rather never get sick again?"
+    },
+    "statement_12": {
+        "choice_01": "...prefer to be stupid but have very intelligent children?",
+        "choice_02": "...prefer to be intelligent and have very stupid children?"
+    },
+     "statement_13": {
+          "choice_01": "...rather run around topless forever?",
+          "choice_02": "...rather run around without pants/skirts etc. forever?"
+    },
+     "statement_14": {
+          "choice_01": "...prefer to eat a handful of mowed lawn?",
+          "choice_02": "...prefer to eat a handful of sand?"
+    },
+    "statement_15": {
+        "choice_01": "...rather die of thirst?",
+        "choice_02": "...rather die of starvation?"
+    },
+    "statement_16": {
+        "choice_01": "...rather be able to sleep for a maximum of 4h a night forever?",
+        "choice_02": "...rather be able to sleep for a minimum of 15h a night forever?"
+    },
+     "statement_17": {
+          "choice_01": "...rather have a pimple on your forehead forever?",
+          "choice_02": "...rather have a bugger in your nose (which is visible) forever?"
+    },
+      "statement_18": {
+          "choice_01": "...prefer to change your partner every 5 years?",
+          "choice_02": "...prefer to stay with someone who has been chosen for you?"
+    },
+     "statement_19": {
+          "choice_01": "...rather gain 30 kg?",
+          "choice_02": "...rather lose 30 kg?"
+    },
+    "statement_20": {
+        "choice_01": "...prefer mentos with döner flavor?",
+        "choice_02": "...prefer mentos with pizza flavor?"
+    },
+     "statement_21": {
+          "choice_01": "...rather never have to learn but forget everything again after 72 hours?",
+          "choice_02": "...rather keep your knowledge of in a year forever?"
+    },
+    "statement_22": {
+          "choice_01": "...rather cheat on your partner?",
+          "choice_02": "...rather beat your mother?"
+    },
+     "statement_23": {
+          "choice_01": "...prefer summer forever?",
+          "choice_02": "...prefer winter forever?"
+    },
+    "statement_24": {
+        "choice_01": "...rather hear the same song forever?",
+        "choice_02": "...rather never hear music again?"
+    },
+    "statement_25": {
+        "choice_01": "...prefer to forget everything from the last 3 years?",
+        "choice_02": "...prefer to learn nothing new in the next 3 years?"
+    },
+     "statement_26": {
+          "choice_01": "...prefer not to be able to pronounce 'a'?",
+          "choice_02": "...prefer not to be able to pronounce 'e'?"
+    },
+      "statement_27": {
+          "choice_01": "...rather eat sheep’s milk cheese with maggots (Casu Marzu)?",
+          "choice_02": "...rather eat a monkey’s brain?"
+    },
+    "statement_28": {
+        "choice_01": "...prefer to be a half-human-half-machine?",
+        "choice_02": "...prefer to be a half-human-half-animal?"
+    },
+    "statement_29": {
+        "choice_01": "...prefer to have the ability of telekinesis?",
+        "choice_02": "...prefer to have the ability of telepathy?"
+    },
+     "statement_30": {
+          "choice_01": "...rather know everything and die tomorrow?",
+          "choice_02": "...rather live forever but become ignorant?"
+    },
+    "statement_31": {
+        "choice_01": "...rather get a tattoo of your own name?",
+        "choice_02": "...rather get a tattoo of your ex partners name?"
+    },
+    "statement_32": {
+        "choice_01": "...prefer to start each sentence with 'I'?",
+        "choice_02": "...prefer to end each sentence with 'uwu'?"
+    },
+     "statement_33": {
+          "choice_01": "...prefer to be naked for 1 hour at work (no home office)?",
+          "choice_02": "...prefer to be thrown out naked for 2 kilometers in front of your home?"
+    },
+    "statement_34": {
+        "choice_01": "...be a superhero?",
+        "choice_02": "...be a villain?"
+    },
+    "statement_35": {
+        "choice_01": "...rather never be serious again?",
+        "choice_02": "...rather never laugh again?"
+    },
+     "statement_36": {
+          "choice_01": "...prefer to be able to talk to animals?",
+          "choice_02": "...prefer to have a flying broom/carpet?"
+    },
+    "statement_37": {
+        "choice_01": "...rather be hungry all your life?",
+        "choice_02": "...rather be tired all your life?"
+    },
+    "statement_38": {
+        "choice_01": "...rather achieve your biggest dream?",
+        "choice_02": "...rather undo your biggest mistake?"
+    },
+     "statement_39": {
+          "choice_01": "...rather send a nude picture to your mother?",
+          "choice_02": "...rather send a nude picture to your father?"
+    },
+     "statement_40": {
+          "choice_01": "...rather get fired by your best friend/partner?",
+          "choice_02": "...rather fire your best friend/partner?"
+    },
+    "statement_41": {
+        "choice_01": "...want to have a rewatch button in your life?",
+        "choice_02": "...want to have a pause button in your life?"
+    },
+    "statement_42": {
+        "choice_01": "...have angela merkel as sister?",
+        "choice_02": "...have Donald trump as cousin?"
+    }
+}
+
