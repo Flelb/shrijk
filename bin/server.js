@@ -440,11 +440,11 @@ function leave(userID) {
 	if(r.users.length > 0) {
 		r.host = r.users[0]
 		io.to(r.host).emit('promotion', pain.get(userID))
+		all_rooms.set(pain.get(userID), r)
 	} else {
 		delete_votes(pain.get(userID))
 		all_rooms.delete(pain.get(userID))
 	}
-	all_rooms.set(pain.get(userID), r) // totally forgot to save that shit
 
 }
 // -------------------------------------------------------------------------------------
