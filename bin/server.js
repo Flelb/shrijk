@@ -15,19 +15,19 @@ var server = require('http').createServer(app)
 const port = normalizePort(process.env.PORT || '9000')
 app.set('port', port)
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "https://shrijk.netlify.app/");
-//   res.header(
-//     "Access-Control-Allow-Headers",
-//     "Origin, X-Requested-With, Content-Type, Accept"
-//   );
-//   res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
-//   res.header("Access-Control-Allow-Credentials", true);
-//   if (req.method === "OPTIONS") {
-//     return res.sendStatus(204);
-//   }
-//   next();
-// });
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://shrijk.netlify.app/");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
+  res.header("Access-Control-Allow-Credentials", true);
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+  next();
+});
 
 // Listen on provided port, on all network interfaces.
 server.listen(port, () => {
