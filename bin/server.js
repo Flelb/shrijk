@@ -15,6 +15,20 @@ var server = require('http').createServer(app)
 const port = normalizePort(process.env.PORT || '9000')
 app.set('port', port)
 
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "https://shrijk.netlify.app/");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
+//   res.header("Access-Control-Allow-Credentials", true);
+//   if (req.method === "OPTIONS") {
+//     return res.sendStatus(204);
+//   }
+//   next();
+// });
+
 // Listen on provided port, on all network interfaces.
 server.listen(port, () => {
 	console.log('> LISTEN ON 9000\n')
@@ -28,9 +42,7 @@ server.on('listening', onListening)
 const io = require('socket.io')(server, {
 	cors: {
 		origin: "https://shrijk.netlify.app/",
-		methods: ["GET", "POST"],
-    	Access-Control-Allow-Origin: "*"
-		
+		methods: ["GET", "POST"]
 	}
 })
 
