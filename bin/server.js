@@ -41,14 +41,14 @@ server.on('listening', onListening)
 // Socket Kram
 const io = require('socket.io')(server, {
 	cors: {
-		origin: "https://shrijk.netlify.app/",
+		origin: "*",
+		// origin: "https://shrijk.netlify.app/",
 		methods: ["GET", "POST"]
 		// ,
 		// allowedHeaders: ["frontend-header"],
 		// credentials: true
 	}
 })
-io.origins('*:*')
 
 var pain = new Map()		// user.id -> roomcode
 var users = new Map()		// user.id -> {name, avatar, newVote, points}
