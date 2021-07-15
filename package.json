@@ -1,7 +1,6 @@
 {
 	"name": "backend",
 	"version": "0.0.0",
-	"private": true,
 	"engines": {
 		"node": "12.x",
 		"npm": "6.x"

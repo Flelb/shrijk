@@ -8,8 +8,8 @@ var debug = require('debug')('backend:server')
 const fs = require('fs')
 const key = fs.readFileSync('./public/certificates/key.pem')
 const cert = fs.readFileSync('./public/certificates/cert.pem')
-var server = require('https').createServer({ key: key, cert: cert }, app)
-// var server = require('http').createServer(app)
+// var server = require('https').createServer({ key: key, cert: cert }, app)
+var server = require('http').createServer(app)
 
 // Get port from environment and store in Express.
 const port = normalizePort(process.env.PORT || '9000')
