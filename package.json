@@ -7,7 +7,7 @@
 		"npm": "6.x"
 	},
 	"scripts": {
-		"start": "nodemon ./bin/server"
+		"start": "node ./bin/server"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
