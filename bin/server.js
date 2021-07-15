@@ -125,7 +125,7 @@ io.on('connection', socket => {
 	socket.on('leave_room', () => {
 		console.log('> LEAVE\n')
 		// socket.disconnect()
-		socket.socket.reconnect()
+		socket.io.reconnect()
 		// we suffer already. may as well use our pain
 		// leave(socket.id)
 		// let roomcode = pain.get(socket.id)
