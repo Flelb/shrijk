@@ -559,21 +559,6 @@ function count_sl_votes(roomcode) {
 }
 // -------------------------------------------------------------------------------------
 // pyp stuff oohoooo [to the theme of ducktales]
-
-// spiel startet, backend broadcastet an den room die erste question und person
-// frontend hat 2 verschiedene Strings über den buttons:
-//		Ich bin die Choice-Person	: "Würdest DU eher...:"
-//		Ich bin jemand anderes		: "Würde Person [name] eher..."
-
-// dann voted jeder und das backend counted. Vermerkt separat den Vote der Main Person.
-// sobald alle gevoted haben evaluated das backend die ergebnisse und verrechnet sie
-
-// das backend broadcastet die Daten schön ans frontend, was die dann darstellt
-// der host hat dann einen button für "next question"
-
-// das triggert im backend, dass die nächste Frage gesendet wird mit der next person
-// repeat so lange bis die User Liste ein mal durch ist
-
 function pyp_start(roomcode) {
 	all_rooms.get(roomcode).game = "pyp"
 	pyp_select_question(roomcode)
@@ -614,8 +599,6 @@ function pyp_load_questions(roomcode) {
 }
 
 function pyp_elect_chosen(roomcode) {
-	// getting the userlist in room:
-	// var user_list = getUsersByRoom(roomcode)
 	var user_list = all_rooms.get(roomcode).users
 	var current_chosen = all_rooms.get(roomcode).pyp_chosen
 
@@ -677,8 +660,7 @@ function pyp_process_vote(user, roomcode, choice) {
 			else log_map_losers.push(user)
 		}
 		
-		var pyp_over = all_rooms.get(roomcode).pyp_round_c >= (all_rooms.get(roomcode).users.length * 2)
-		// var pyp_over = all_rooms.get(roomcode).pyp_round_c >= (all_rooms.get(roomcode).users.length)
+		var pyp_over = all_rooms.get(roomcode).pyp_round_c >= (all_rooms.get(roomcode).users.length * 2) 
 
 		var gameObject = {
 			type: "pyp_round_over",
