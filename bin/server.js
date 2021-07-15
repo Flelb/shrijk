@@ -122,21 +122,21 @@ io.on('connection', socket => {
 
 	})
 
-	socket.on('leave_room', () => {
-		console.log('> LEAVE\n')
-		// socket.disconnect()
-		// socket.io.disconnect()
-		// we suffer already. may as well use our pain
-		leave(socket.id)
-		let roomcode = pain.get(socket.id)
-		let list = getUsersByRoom(roomcode)
+	// socket.on('leave_room', () => {
+	// 	console.log('> LEAVE\n')
+	// 	// socket.disconnect()
+	// 	// socket.io.disconnect()
+	// 	// we suffer already. may as well use our pain
+	// 	leave(socket.id)
+	// 	let roomcode = pain.get(socket.id)
+	// 	let list = getUsersByRoom(roomcode)
 
-		if (roomcode) io.to(roomcode).emit('user_list', list)
+	// 	if (roomcode) io.to(roomcode).emit('user_list', list)
 		
-		socket.leave(roomcode)
+	// 	socket.leave(roomcode)
 
-		pain.delete(socket.id)
-	})
+	// 	pain.delete(socket.id)
+	// })
 
 	socket.on('disconnect', () => {
 		console.log('> DISCO\n')
@@ -426,8 +426,8 @@ function leave(userID) {
 	// if the room still exist, appoint new Host, if not > torch the room
 	if(r.users.length > 0) {
 		r.host = r.users[0]
-		io.to(r.host).emit('promotion', pain.get(userID))
 		all_rooms.set(pain.get(userID), r)
+		io.to(r.host).emit('promotion', pain.get(userID))
 	} else {
 		delete_votes(pain.get(userID))
 		all_rooms.delete(pain.get(userID))
