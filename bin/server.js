@@ -42,11 +42,7 @@ server.on('listening', onListening)
 const io = require('socket.io')(server, {
 	cors: {
 		origin: "*",
-		// origin: "https://shrijk.netlify.app/",
 		methods: ["GET", "POST"]
-		// ,
-		// allowedHeaders: ["frontend-header"],
-		// credentials: true
 	}
 })
 

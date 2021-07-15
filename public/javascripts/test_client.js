@@ -5,6 +5,5 @@ clientio.on('connect', () => {
 })
 
 function status() {
-    console.log("STATUS CALLED")
 	clientio.emit('status')
 }
