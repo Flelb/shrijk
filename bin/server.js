@@ -42,12 +42,13 @@ server.on('listening', onListening)
 const io = require('socket.io')(server, {
 	cors: {
 		origin: "https://shrijk.netlify.app/",
-		methods: ["GET", "POST"],
-		allowedHeaders: ["frontend-header"],
-		credentials: true
+		methods: ["GET", "POST"]
+		// ,
+		// allowedHeaders: ["frontend-header"],
+		// credentials: true
 	}
 })
-
+io.origins('*:*')
 
 var pain = new Map()		// user.id -> roomcode
 var users = new Map()		// user.id -> {name, avatar, newVote, points}
