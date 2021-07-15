@@ -12,7 +12,7 @@ var server = require('https').createServer({ key: key, cert: cert }, app)
 // var server = require('http').createServer(app)
 
 // Get port from environment and store in Express.
-var port = normalizePort(process.env.PORT || '9000')
+const port = normalizePort(process.env.PORT || '9000')
 app.set('port', port)
 
 // Listen on provided port, on all network interfaces.
@@ -27,7 +27,7 @@ server.on('listening', onListening)
 // Socket Kram
 const io = require('socket.io')(server, {
 	cors: {
-		origin: "https://localhost:3000",
+		origin: "https://shrijk.netlify.app/",
 		methods: ["GET", "POST"]
 	}
 })
